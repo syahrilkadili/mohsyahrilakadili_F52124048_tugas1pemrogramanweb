@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrasi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Registrasi</h2>
+    
+    <form action="#" method="post">
+      <!-- DIV Layout untuk form fields -->
+      <div class="form-group">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="konfirmasi">Konfirmasi Password:</label>
+        <input type="password" id="konfirmasi" name="konfirmasi" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+          <option value="">Pilih...</option>
+          <option value="L">Laki-laki</option>
+          <option value="P">Perempuan</option>
+        </select>
+      </div>
+      
+      <!-- Table Layout untuk checkbox terms -->
+      <table class="terms-table">
+        <tr>
+          <td>
+            <input type="checkbox" id="setuju" name="setuju" required>
+          </td>
+          <td>
+            <label for="setuju" style="font-weight: normal;">
+              Saya menyetujui syarat dan ketentuan yang berlaku
+            </label>
+          </td>
+        </tr>
+      </table>
+      
+      <button type="submit" class="btn-register">Daftar</button>
+    </form>
+    
+    <div class="link">
+      Sudah punya akun? <a href="login.html">Login di sini</a>
+    </div>
+  </div>
+</body>
+</html>
